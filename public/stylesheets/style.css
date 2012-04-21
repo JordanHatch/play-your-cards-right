@@ -58,6 +58,7 @@ form input:hover { background: #666; cursor: pointer; }
   color: #fff;
   padding: 0.5em;
   margin-bottom: 1em;
+  line-height: 1.3em;
 }
 .message.correct { background:#679d4d; }
 .message.incorrect { background:#9d3532; }

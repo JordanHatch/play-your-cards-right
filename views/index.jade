@@ -16,10 +16,8 @@ div.cards
           span.clear
 div.actions
   div.wrap
-    if correctAnswer
-      div.message.correct Correct answer!
-    else if incorrectAnswer
-      div.message.incorrect Incorrect answer!
+    if message
+      div.message(class=message.class)= message.text
     end
     div.score Score: #{score}
     form(method='post', action='/restart')
