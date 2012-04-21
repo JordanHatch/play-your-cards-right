@@ -5,6 +5,9 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+a, a:link, a:visited { color: #444; }
+a:hover, a:active { color: #888; }
+
 .clear { clear: both; }
 
 .cards {
@@ -58,3 +61,5 @@ form input:hover { background: #666; cursor: pointer; }
 }
 .message.correct { background:#679d4d; }
 .message.incorrect { background:#9d3532; }
+
+.actions .info { font-size: 0.85em; margin-top: 1em; }
