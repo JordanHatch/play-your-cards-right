@@ -1,0 +1,28 @@
+div.cards
+  each card in cardsPlayed
+    div.card
+      h1 #{card.title}
+      h2 #{card.url}
+      if card == lastCard
+        div.buttons
+          form(method='post', action='/higher')
+            input(type='submit', value='Higher!')
+          form(method='post', action='/lower')
+            input(type='submit', value='Lower!')
+      else
+        div.cost
+          span.value &pound;#{card.formatted_cost}
+          span.desc cost for 10/11
+          span.clear
+div.actions
+  div.wrap
+    if correctAnswer
+      div.message.correct Correct answer!
+    else if incorrectAnswer
+      div.message.incorrect Incorrect answer!
+    end
+    div.score Score: #{score}
+    form(method='post', action='/restart')
+      input(type='submit', value='Restart')
+script(type='text/javascript')
+  window.scroll(0,100000000000);

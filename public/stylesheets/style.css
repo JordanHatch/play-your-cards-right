@@ -1,0 +1,60 @@
+@import url("reset.css");
+
+body {
+  background: #333;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.clear { clear: both; }
+
+.cards {
+  margin: 1em;
+  width: 65%;
+  float: left;
+  overflow: auto;
+}
+.card {
+  -webkit-border-radius: 6px;
+  -webkit-box-shadow: #222 1px 1px 2px;
+  width: 12em;
+  height: 18em;
+  background: #f6f6f6;
+  border: 1px solid #bbb;
+  padding: 1em;
+  margin: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.card h1 { font-size: 1.5em; line-height: 1.1em; font-weight: bold; }
+.card h2 { font-size: 1em; margin: 0.5em 0; word-wrap: break-word; }
+
+.card .cost {  margin: 1em 0; display: block; }
+.card .cost .value { font-size: 2em; float: left; }
+.card .cost .desc { font-size: 0.7em; color: #888; display: block; clear: left; font-weight: bold; margin-top: 0.5em; float: right; text-transform: uppercase; }
+
+.card .buttons { margin: 1em 0; }
+
+form input { -webkit-border-radius: 3px; padding: 0.5em; background: #333; color: #fff; border: none; font-size: 1.1em; }
+form input:hover { background: #666; cursor: pointer; }
+.card .buttons form:first-child { float: left; }
+.card .buttons form:last-child { float: right; }
+
+.actions {
+  background: #f6f6f6;
+  color: #000;
+  height: 100%;
+  width: 28%;
+  position: fixed;
+  right: 0;
+}
+.actions .wrap { padding: 1em; }
+.actions .score { margin: 0.5em 0; font-size: 3em; font-weight: bold;   }
+
+.message {
+  background: #333;
+  color: #fff;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+.message.correct { background:#679d4d; }
+.message.incorrect { background:#9d3532; }
